@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-template-name="article">
+<html lang="en" data-template-name="index">
   <head>
     <meta charset="UTF-8">
-    <title>Article</title>
+    <title>Course</title>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=ad84b8f2-2fef-4887-96fd-060449a093b0" type="text/javascript"></script>
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -222,95 +222,174 @@
     </header>
     <div class="wrapper">
       <div class="base">
-        <style>
-          .article_content {
-          	font-size: 1.6rem;
-          }
-          h1 {
-          	font-size: 2.8rem;
-          	margin-bottom: 3rem;
-          }
-          h2 {
-          	font-size: 2.4rem;
-          	margin-bottom: 1.6rem;
-          }
-          h3 {
-          	font-size: 2rem;
-          	margin-bottom: 1rem;
-          }
-          p {
-          	margin-bottom: 1rem;
-          }
-          ul,ol {
-          	margin-bottom: 1.6rem;
-          }
-        </style>
-        <section class="section article_content">
-          <div class="section_in">
-            <h1>Markup requirements and examples for WP article single page (blog single post, etc.)</h1>
-            <h2>Example on WP site <a href="https://woo.glivera.com/test-page/">here</a></h2>
-            <h2>Section should be named .article_content <br> All styles will be nested from parent selector, for ex. article_content p {some style}</h2>
-            <h2> </h2>
-            <h2>Simple paragraph</h2>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries
-            </p>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries				
-            </p>
-            <h2>UL list </h2>
-            <ul>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-            </ul>
-            <h2>OL list </h2>
-            <ol>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item		</li>
-            </ol>
-            <h2>WP table </h2>
-            <figure class="wp-block-table">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>table cell</td>
-                    <td>table cell</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <figcaption>table caption</figcaption>
-            </figure>
-            <h2>WP embeded video</h2>
-            <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-              <div class="wp-block-embed__wrapper">
-                <iframe title="Rick Astley - Never Gonna Give You Up (Official Music Video)" width="525" height="295" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <section class="section hero_product">
+          <div class="section_in hero_product__in">
+            <div class="bread_crumbs">
+              <ul class="bread_crumbs__list crumbs_section--block_mod">
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Главная</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Каталог товаров</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Категория</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Подкатегория</a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero_product__row">
+              <div class="hero_product__col hero_product__col--info_mod">
+                <div class="hero_product__info">
+                  <div class="hero_product__title">НАЗВАНИЕ КУРСА</div>
+                  <div class="hero_product__descr">Lorem ipsum dolor sit amet consectetur. Sollicitudin viverra turpis adipiscing posuere arcu odio gravida et molestie.</div>
+                  <ul class="hero__list_btn">
+                    <li class="hero__list_btn_item"><a class="btn_1" href="#"><span class="btn_title">Добавить в корзину</span><span class="btn_icon">
+                          <svg class="icon icon_tobasket icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                          </svg></span></a></li>
+                    <li class="hero__list_btn_item"><a class="btn_2" href="#"><span class="btn_title">Купить в один клик</span><span class="btn_icon">
+                          <svg class="icon icon_icon-click icon--size_mod">
+                            <use xlink:href="images/sprite/sprite.svg#icon-click"></use>
+                          </svg></span></a></li>
+                  </ul>
+                </div>
               </div>
-              <figcaption>video caption</figcaption>
-            </figure>
-            <h2>WP simple blockquote </h2>
-            <blockquote class="wp-block-quote">
-              <p>Quote description, can be <strong>bold</strong><em>italic</em></p>
-              <cite>Quote Author, can be <strong>bold</strong><em>italic</em></cite>
-            </blockquote>
-            <h2>WP Single image </h2>
-            <figure class="wp-block-image"><img class="wp-image-77 loading" loading="lazy" width="801" height="801" src="http://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg" alt="" srcset="https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg 801w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-100x100.jpg 100w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-600x600.jpg 600w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-300x300.jpg 300w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-150x150.jpg 150w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-768x768.jpg 768w" sizes="(max-width: 801px) 100vw, 801px">
-              <figcaption>image caption </figcaption>
-            </figure>
-            <h2>WP Media & text </h2>
-            <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:19% auto">
-              <figure class="wp-block-media-text__media"><img class="size-full loading" loading="lazy" width="128" height="77" src="http://woo.glivera.com/wp-content/uploads/2022/12/logo_woo.png" alt="" data-was-processed="true"></figure>
-              <div class="wp-block-media-text__content">
-                <p></p>adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar
+              <div class="hero_product__col hero_product__col--img_mod">
+                <div class="hero_product__col_decor"></div><a class="hero_product__video_w" href="#">
+                  <div class="hero_product__img_w"><img src="images/video-cover.jpg" alt="cover img"></div></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section course_info">
+          <div class="section_in course_info__in">
+            <div class="course_info__w">
+              <div class="prod_tab_1">
+                <div class="prod_tab_1__title">НАЗВАНИЕ КУРСА</div>
+                <div class="prod_tab_1__row">
+                  <div class="prod_tab_1__col prod_tab_1__col--slider_mod">
+                    <picture class="prod_tab_1__img_w">
+                      <source srcset="images/video-cover.jpg.webp" type="image/webp">
+                      <source srcset="images/video-cover.jpg" type="image/jpeg"><img class="prod_tab_1__img" src="images/video-cover.jpg" alt="some image" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="prod_tab_1__col prod_tab_1__col--info_mod">
+                    <div class="prod_tab_1__info">
+                      <div class="prod_tab_1__price">
+                        <div class="prod_tab_1__price_sale">400 000 ₽</div>
+                        <div class="prod_tab_1__price_row">
+                          <div class="prod_tab_1__price_title">Цена:</div>
+                          <div class="prod_tab_1__price_cost">300 000 ₽</div>
+                        </div>
+                      </div>
+                      <ul class="prod_tab_1__list_btn">
+                        <li class="prod_tab_1__list_btn_item"><a class="btn_1" href="#"><span class="btn_title">Добавить в корзину</span><span class="btn_icon">
+                              <svg class="icon icon_tobasket icon--size_mod">
+                                <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                              </svg></span></a></li>
+                        <li class="prod_tab_1__list_btn_item"><a class="btn_2" href="#"><span class="btn_title">Купить в один клик</span><span class="btn_icon">
+                              <svg class="icon icon_icon-click icon--size_mod">
+                                <use xlink:href="images/sprite/sprite.svg#icon-click"></use>
+                              </svg></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="prod_tab_1__article_w">
+                  <div class="article_content">
+                    <p>Сканер Launch X-431 PADVII Link - это обновления версия флагмана среди диагностических сканеров от компании Launch. Его можно охарактеризовать фразой - “Достаточно одного”. Так как сканер воплотил в себе самые передовые технологии Launch и в паре с мощнейшим железом позволит вам быть актуальным специалистом на годы вперёд. С его помощью вы сможете проводить не только стандартную диагностику авто, а также онлайн программирование, кодирование, ведомую диагностику и многое другое.</p>
+                    <p>В данной версии сканера обновилась комплектация. В комплект входит VCI адаптер Smartlink C, который поддерживает помимо стандартных функций, еще и диагностику по протоколу J2534 и RP1210/D-PDU. Комплект OBD-I адаптеров приобретается отдельно. Карта покрытия охватывает более 90 марок автомобилей и более 30 сервисных функций.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section application application--2v_mod">
+          <div class="section_in application__in">
+            <div class="application__row">
+              <picture class="application__img_w">
+                <source srcset="images/application-bg-2.jpg.webp" type="image/webp">
+                <source srcset="images/application-bg-2.jpg" type="image/jpeg"><img class="application__img" src="images/application-bg-2.jpg" alt="some image" loading="lazy">
+              </picture>
+              <div class="application__col">
+                <div class="application__title">Заголовок формы заявки</div>
+                <div class="application__form_w">
+                  <form action="get">
+                    <div class="application__form_in">
+                      <div class="application__form_item">
+                        <div class="form_input">
+                          <div class="form_input__field">
+                            <input class="form_input__element" id="application_name" placeholder="Имя*" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application__form_item">
+                        <div class="form_input">
+                          <div class="form_input__field">
+                            <input class="form_input__element" type="tel" id="application_phone" placeholder="Номер телефона*" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application__form_btn_w">
+                        <button class="btn_4 application__btn" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="application__rights">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете Политику Конфиденциальности</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section preview preview--course_mod">
+          <div class="section_in preview__in">
+            <div class="heading">
+              <div class="heading__title">Больше курсов</div>
+            </div>
+            <div class="preview__content">
+              <div class="preview__list">
+                <div class="preview__list_item">
+                  <div class="card_course true">
+                    <div class="card_course__img_decor"></div>
+                    <div class="card_course__row">
+                      <div class="card_course__col card_course__col--info_mod">
+                        <div class="card_course__type">КУРС</div>
+                        <div class="card_course__title">Название курса</div>
+                        <div class="card_course__descr">Lorem ipsum dolor sit amet consectetur. Id sem tortor ac cum lectus.</div><a class="card_course__link" href="#"><span class="card_course__link_title">ПОСМОТРЕТЬ</span><span class="card_course__link_icon">
+                            <svg class="icon icon_arrow-right-2 icon--size_mod">
+                              <use xlink:href="images/sprite/sprite.svg#arrow-right-2"></use>
+                            </svg></span></a>
+                      </div>
+                      <div class="card_course__col card_course__col--img_mod">
+                        <picture class="card_course__img_w">
+                          <source srcset="images/video-cover.jpg.webp" type="image/webp">
+                          <source srcset="images/video-cover.jpg" type="image/jpeg"><img class="card_course__img" src="images/video-cover.jpg" alt="some image" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview__list_item">
+                  <div class="card_course true">
+                    <div class="card_course__img_decor"></div>
+                    <div class="card_course__row">
+                      <div class="card_course__col card_course__col--info_mod">
+                        <div class="card_course__type">КУРС</div>
+                        <div class="card_course__title">Название курса</div>
+                        <div class="card_course__descr">Lorem ipsum dolor sit amet consectetur. Id sem tortor ac cum lectus.</div><a class="card_course__link" href="#"><span class="card_course__link_title">ПОСМОТРЕТЬ</span><span class="card_course__link_icon">
+                            <svg class="icon icon_arrow-right-2 icon--size_mod">
+                              <use xlink:href="images/sprite/sprite.svg#arrow-right-2"></use>
+                            </svg></span></a>
+                      </div>
+                      <div class="card_course__col card_course__col--img_mod">
+                        <picture class="card_course__img_w">
+                          <source srcset="images/video-cover.jpg.webp" type="image/webp">
+                          <source srcset="images/video-cover.jpg" type="image/jpeg"><img class="card_course__img" src="images/video-cover.jpg" alt="some image" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

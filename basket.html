@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-template-name="article">
+<html lang="en" data-template-name="index">
   <head>
     <meta charset="UTF-8">
-    <title>Article</title>
+    <title>Index</title>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=ad84b8f2-2fef-4887-96fd-060449a093b0" type="text/javascript"></script>
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -222,96 +222,114 @@
     </header>
     <div class="wrapper">
       <div class="base">
-        <style>
-          .article_content {
-          	font-size: 1.6rem;
-          }
-          h1 {
-          	font-size: 2.8rem;
-          	margin-bottom: 3rem;
-          }
-          h2 {
-          	font-size: 2.4rem;
-          	margin-bottom: 1.6rem;
-          }
-          h3 {
-          	font-size: 2rem;
-          	margin-bottom: 1rem;
-          }
-          p {
-          	margin-bottom: 1rem;
-          }
-          ul,ol {
-          	margin-bottom: 1.6rem;
-          }
-        </style>
-        <section class="section article_content">
-          <div class="section_in">
-            <h1>Markup requirements and examples for WP article single page (blog single post, etc.)</h1>
-            <h2>Example on WP site <a href="https://woo.glivera.com/test-page/">here</a></h2>
-            <h2>Section should be named .article_content <br> All styles will be nested from parent selector, for ex. article_content p {some style}</h2>
-            <h2> </h2>
-            <h2>Simple paragraph</h2>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries
-            </p>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries				
-            </p>
-            <h2>UL list </h2>
-            <ul>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-            </ul>
-            <h2>OL list </h2>
-            <ol>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item		</li>
-            </ol>
-            <h2>WP table </h2>
-            <figure class="wp-block-table">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>table cell</td>
-                    <td>table cell</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <figcaption>table caption</figcaption>
-            </figure>
-            <h2>WP embeded video</h2>
-            <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-              <div class="wp-block-embed__wrapper">
-                <iframe title="Rick Astley - Never Gonna Give You Up (Official Music Video)" width="525" height="295" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <section class="section crumbs_section crumbs_section--block_mod">
+          <div class="section_in crumbs_section__in">
+            <div class="crumbs_section__list_w">
+              <div class="bread_crumbs">
+                <ul class="bread_crumbs__list">
+                  <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Главная</a>
+                  </li>
+                  <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Каталог товаров</a>
+                  </li>
+                  <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Категория</a>
+                  </li>
+                  <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Подкатегория</a>
+                  </li>
+                </ul>
               </div>
-              <figcaption>video caption</figcaption>
-            </figure>
-            <h2>WP simple blockquote </h2>
-            <blockquote class="wp-block-quote">
-              <p>Quote description, can be <strong>bold</strong><em>italic</em></p>
-              <cite>Quote Author, can be <strong>bold</strong><em>italic</em></cite>
-            </blockquote>
-            <h2>WP Single image </h2>
-            <figure class="wp-block-image"><img class="wp-image-77 loading" loading="lazy" width="801" height="801" src="http://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg" alt="" srcset="https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg 801w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-100x100.jpg 100w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-600x600.jpg 600w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-300x300.jpg 300w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-150x150.jpg 150w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-768x768.jpg 768w" sizes="(max-width: 801px) 100vw, 801px">
-              <figcaption>image caption </figcaption>
-            </figure>
-            <h2>WP Media & text </h2>
-            <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:19% auto">
-              <figure class="wp-block-media-text__media"><img class="size-full loading" loading="lazy" width="128" height="77" src="http://woo.glivera.com/wp-content/uploads/2022/12/logo_woo.png" alt="" data-was-processed="true"></figure>
-              <div class="wp-block-media-text__content">
-                <p></p>adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar
+            </div>
+          </div>
+        </section>
+        <section class="section contacts">
+          <div class="section_in contacts__in">
+            <div class="heading heading--basket_mod">
+              <div class="heading__title">Корзина</div><a class="js-clear-basket heading__link" href="#"><span class="heading__link_title">Очистить корзину</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="section basket">
+          <div class="section_in basket__in">
+            <div class="basket__form_w">
+              <form action="#">
+                <ul class="basket__list">
+                  <li class="basket__item">
+                    <div class="basket__item_row">
+                      <div class="basket__item_img_w"><img src="images/card.jpg" alt=""></div><a class="basket__item__descr" href="#">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                      <div class="basket__item_control">
+                        <div class="basket__item_control_row">
+                          <div class="basket__item_control_item">
+                            <div class="product-quantity" data-title="Quantity">
+                              <div class="quantity">
+                                <button class="input_number_decrement input_number_decrement--transparent" type="button" aria-label="decrement minus">
+                                  <svg class="icon icon_- icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#-"></use>
+                                  </svg>
+                                </button>
+                                <input class="input_number" type="number" value="0" min="0" max="100">
+                                <button class="input_number_increment input_number_decrement--transparent" type="button" aria-label="decrement plus">
+                                  <svg class="icon icon_+ icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#+"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="basket__item_control_item">
+                            <div class="basket__item_price">59 990 ₽</div>
+                          </div>
+                          <div class="basket__item_control_item">
+                            <button class="basket__item_btn_remove js-btn-basket-remove" type="button"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="basket__item">
+                    <div class="basket__item_row">
+                      <div class="basket__item_img_w"><img src="images/card.jpg" alt=""></div><a class="basket__item__descr" href="#">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                      <div class="basket__item_control">
+                        <div class="basket__item_control_row">
+                          <div class="basket__item_control_item">
+                            <div class="product-quantity" data-title="Quantity">
+                              <div class="quantity">
+                                <button class="input_number_decrement input_number_decrement--transparent" type="button" aria-label="decrement minus">
+                                  <svg class="icon icon_- icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#-"></use>
+                                  </svg>
+                                </button>
+                                <input class="input_number" type="number" value="0" min="0" max="100">
+                                <button class="input_number_increment input_number_decrement--transparent" type="button" aria-label="decrement plus">
+                                  <svg class="icon icon_+ icon--size_mod">
+                                    <use xlink:href="images/sprite/sprite.svg#+"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="basket__item_control_item">
+                            <div class="basket__item_price">59 990 ₽</div>
+                          </div>
+                          <div class="basket__item_control_item">
+                            <button class="basket__item_btn_remove js-btn-basket-remove" type="button"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <div class="basket__total_row">
+              <div class="basket__total_item">
+                <div class="basket__total_price_w">
+                  <div class="basket__total_title">Итого:</div>
+                  <div class="basket__total_price">82 990 ₽</div>
+                </div>
               </div>
+              <div class="basket__total_item"><a class="btn_1 basket__total_btn" href="#"><span class="btn_title">Оформить заказ</span><span class="btn_icon">
+                    <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                    </svg></span></a></div>
             </div>
           </div>
         </section>

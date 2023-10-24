@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-template-name="article">
+<html lang="en" data-template-name="index">
   <head>
     <meta charset="UTF-8">
-    <title>Article</title>
+    <title>Index</title>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=ad84b8f2-2fef-4887-96fd-060449a093b0" type="text/javascript"></script>
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -222,96 +222,510 @@
     </header>
     <div class="wrapper">
       <div class="base">
-        <style>
-          .article_content {
-          	font-size: 1.6rem;
-          }
-          h1 {
-          	font-size: 2.8rem;
-          	margin-bottom: 3rem;
-          }
-          h2 {
-          	font-size: 2.4rem;
-          	margin-bottom: 1.6rem;
-          }
-          h3 {
-          	font-size: 2rem;
-          	margin-bottom: 1rem;
-          }
-          p {
-          	margin-bottom: 1rem;
-          }
-          ul,ol {
-          	margin-bottom: 1.6rem;
-          }
-        </style>
-        <section class="section article_content">
+        <section class="section hero_product hero_product--2_mod">
+          <div class="section_in hero_product__in">
+            <div class="bread_crumbs">
+              <ul class="bread_crumbs__list">
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Главная</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Каталог товаров</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Категория</a>
+                </li>
+                <li class="bread_crumbs__item"><a class="bread_crumbs__link" href="#">Подкатегория</a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero_product__row">
+              <div class="hero_product__col hero_product__col--info_mod">
+                <div class="hero_product__info">
+                  <div class="hero_product__title">Автосканеры LAUNCH</div>
+                  <ul class="hero__list_btn">
+                    <li class="hero__list_btn_item"><a class="btn_2" href="#"><span class="btn_title">Готовые комплекты с планшетом</span></a></li>
+                    <li class="hero__list_btn_item"><a class="btn_2" href="#"><span class="btn_title">Сканеры</span></a></li>
+                    <li class="hero__list_btn_item"><a class="btn_2" href="#"><span class="btn_title">Система TMPS</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="hero_product__col hero_product__col--img_mod hero_product__col--align_bot_mod">
+                <div class="hero_product__col_decor"></div>
+                <div class="hero_product__img_w"><img src="images/hero-sub.png" alt="cover img"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section filter">
+          <div class="section_in filter__in">
+            <div class="filter__row_w">
+              <div class="filter__row">
+                <div class="filter__sort">Сортировать:</div>
+                <div class="filter__filter_w">
+                  <button class="filter__for filter__for--price_mod" type="button"><span class="filter__for_icon">
+                      <svg class="icon icon_sort icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#sort"></use>
+                      </svg></span><span class="filter__for_title">По цене</span></button>
+                  <button class="filter__for filter__for--alphabet_mod" type="button"><span class="filter__for_icon">
+                      <svg class="icon icon_alphabet icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#alphabet"></use>
+                      </svg></span><span class="filter__for_title">По алфавиту</span></button>
+                  <button class="filter__for filter__for--newest_mod filter__for--active_state_mod" type="button"><span class="filter__for_icon">
+                      <svg class="icon icon_new icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#new"></use>
+                      </svg></span><span class="filter__for_title">По новизне</span></button>
+                  <button class="filter__for filter__for--popular_mod" type="button"><span class="filter__for_icon">
+                      <svg class="icon icon_hit-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#hit-2"></use>
+                      </svg></span><span class="filter__for_title">По популярности</span></button>
+                  <div class="filter__for filter__for--range_mod">
+                    <div class="filter__for_input_w"><span class="filter__for_range_title">Цена:</span>
+                      <div class="filter__for_range_input_w">
+                        <input class="filter__for_range_text filter__for_range_text--min_mod" type="text" name="" id="filter__for_range_min" placeholder="10000">
+                      </div>
+                      <div class="filter__for_range_slder_w">
+                        <input class="filter__for_range_slider" type="range" name="" id="filter__for_range_slider">
+                      </div>
+                      <div class="filter__for_range_input_w">
+                        <input class="filter__for_range_text filter__for_range_text--max_mod" type="text" name="" id="filter__for_range_max" placeholder="350000">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__list_content">
+                <div class="filter__list_w">
+                  <ul class="filter__list">
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                    <li class="filter__list_item">
+                              <div class="card card--hit_mod">
+                                <div class="card__in">
+                                  <div class="card__label">
+                                    <svg class="icon icon_hit icon--size_mod">
+                                      <use xlink:href="images/sprite/sprite.svg#hit"></use>
+                                    </svg>
+                                  </div><a class="card__img_link" href="#" data-fancybox="">
+                                    <picture class="card__img_w">
+                                      <source srcset="images/card.jpg.webp" type="image/webp">
+                                      <source srcset="images/card.jpg" type="image/jpeg"><img class="card__img" src="images/card.jpg" alt="some image" loading="lazy">
+                                    </picture></a>
+                                  <div class="card__info"><a class="card__title" href="#" data-fancybox="">Mercedes Star Diagnosis C4 + ноутбук с ПО</a>
+                                    <div class="card__info_row">
+                                      <div class="card__price">59 990 ₽</div><a class="card__basket" href="#">
+                                        <svg class="icon icon_tobasket icon--size_mod">
+                                          <use xlink:href="images/sprite/sprite.svg#tobasket"></use>
+                                        </svg></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li class="pagination__item pagination__item--prev_mod"><a class="pagination__link" href="#"></a></li>
+                    <li class="pagination__item pagination__item--active_mod"><a class="pagination__link" title="1">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="2">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="3">3</a></li>
+                    <li class="pagination__item pagination__item--dots_mod"><a class="pagination__link">&hellip;</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="4">4</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#" title="5">5</a></li>
+                    <li class="pagination__item pagination__item--next_mod"><a class="pagination__link" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section application application--2v_mod">
+          <div class="section_in application__in">
+            <div class="application__row">
+              <picture class="application__img_w">
+                <source srcset="images/application-bg-2.jpg.webp" type="image/webp">
+                <source srcset="images/application-bg-2.jpg" type="image/jpeg"><img class="application__img" src="images/application-bg-2.jpg" alt="some image" loading="lazy">
+              </picture>
+              <div class="application__col">
+                <div class="application__title">Заголовок формы заявки</div>
+                <div class="application__form_w">
+                  <form action="get">
+                    <div class="application__form_in">
+                      <div class="application__form_item">
+                        <div class="form_input">
+                          <div class="form_input__field">
+                            <input class="form_input__element" id="application_name" placeholder="Имя*" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application__form_item">
+                        <div class="form_input">
+                          <div class="form_input__field">
+                            <input class="form_input__element" type="tel" id="application_phone" placeholder="Номер телефона*" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="application__form_btn_w">
+                        <button class="btn_4 application__btn" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="application__rights">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете Политику Конфиденциальности</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
           <div class="section_in">
-            <h1>Markup requirements and examples for WP article single page (blog single post, etc.)</h1>
-            <h2>Example on WP site <a href="https://woo.glivera.com/test-page/">here</a></h2>
-            <h2>Section should be named .article_content <br> All styles will be nested from parent selector, for ex. article_content p {some style}</h2>
-            <h2> </h2>
-            <h2>Simple paragraph</h2>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries
-            </p>
-            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
-              of type and scrambled it to make a type specimen book. It has survived not only five centuries				
-            </p>
-            <h2>UL list </h2>
-            <ul>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item</li>
-            </ul>
-            <h2>OL list </h2>
-            <ol>
-              <li>list item</li>
-              <li>list item</li>
-              <li>list item		</li>
-            </ol>
-            <h2>WP table </h2>
-            <figure class="wp-block-table">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>table cell</td>
-                    <td>table cell</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <figcaption>table caption</figcaption>
-            </figure>
-            <h2>WP embeded video</h2>
-            <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-              <div class="wp-block-embed__wrapper">
-                <iframe title="Rick Astley - Never Gonna Give You Up (Official Music Video)" width="525" height="295" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-              </div>
-              <figcaption>video caption</figcaption>
-            </figure>
-            <h2>WP simple blockquote </h2>
-            <blockquote class="wp-block-quote">
-              <p>Quote description, can be <strong>bold</strong><em>italic</em></p>
-              <cite>Quote Author, can be <strong>bold</strong><em>italic</em></cite>
-            </blockquote>
-            <h2>WP Single image </h2>
-            <figure class="wp-block-image"><img class="wp-image-77 loading" loading="lazy" width="801" height="801" src="http://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg" alt="" srcset="https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg 801w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-100x100.jpg 100w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-600x600.jpg 600w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-300x300.jpg 300w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-150x150.jpg 150w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-768x768.jpg 768w" sizes="(max-width: 801px) 100vw, 801px">
-              <figcaption>image caption </figcaption>
-            </figure>
-            <h2>WP Media & text </h2>
-            <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:19% auto">
-              <figure class="wp-block-media-text__media"><img class="size-full loading" loading="lazy" width="128" height="77" src="http://woo.glivera.com/wp-content/uploads/2022/12/logo_woo.png" alt="" data-was-processed="true"></figure>
-              <div class="wp-block-media-text__content">
-                <p></p>adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar
-              </div>
+            <div class="article_content">
+              <h1>Lorem ipsum dolor sit amet consectetur</h1>
+              <p>Lorem ipsum dolor sit amet consectetur. Purus amet suspendisse odio sed consectetur facilisi id sit accumsan. Amet lectus egestas vestibulum ut. Vestibulum feugiat tristique interdum turpis consequat turpis nisi lorem. Quis amet et egestas felis. Volutpat ac dolor viverra aliquam adipiscing odio semper molestie cras. Cursus commodo consequat non leo. Viverra parturient neque suscipit tellus rhoncus habitant egestas diam. Lacus eros nunc faucibus quam tortor laoreet at natoque dapibus. Faucibus morbi interdum elit ultrices arcu. A tristique tempor ornare semper nulla at imperdiet arcu. Turpis etiam ultricies ut sollicitudin proin cras amet. Euismod adipiscing ut nibh fusce sed elementum. Pretium neque pharetra morbi vitae rhoncus in auctor. Pharetra mi sodales placerat vel orci donec scelerisque tincidunt. Lectus pellentesque donec pulvinar facilisis vulputate leo pharetra. Semper vitae fermentum aliquam curabitur suspendis...</p>
+              <h2>Lorem ipsum dolor sit amet consectetur</h2>
+              <p>Lorem ipsum dolor sit amet consectetur. Purus amet suspendisse odio sed consectetur facilisi id sit accumsan. Amet lectus egestas vestibulum ut. Vestibulum feugiat tristique interdum turpis consequat turpis nisi lorem. Quis amet et egestas felis. Volutpat ac dolor viverra aliquam adipiscing odio semper molestie cras. Cursus commodo consequat non leo. Viverra parturient neque suscipit tellus rhoncus habitant egestas diam. Lacus eros nunc faucibus quam tortor laoreet at natoque dapibus. Faucibus morbi interdum elit ultrices arcu. A tristique tempor ornare semper nulla at imperdiet arcu. Turpis etiam ultricies ut sollicitudin proin cras amet. Euismod adipiscing ut nibh fusce sed elementum. Pretium neque pharetra morbi vitae rhoncus in auctor. Pharetra mi sodales placerat vel orci donec scelerisque tincidunt. Lectus pellentesque donec pulvinar facilisis vulputate leo pharetra. Semper vitae fermentum aliquam curabitur suspendis...</p>
+              <h2>Lorem ipsum dolor sit amet consectetur</h2>
+              <p>Lorem ipsum dolor sit amet consectetur. Purus amet suspendisse odio sed consectetur facilisi id sit accumsan. Amet lectus egestas vestibulum ut. Vestibulum feugiat tristique interdum turpis consequat turpis nisi lorem. Quis amet et egestas felis. Volutpat ac dolor viverra aliquam adipiscing odio semper molestie cras. Cursus commodo consequat non leo. Viverra parturient neque suscipit tellus rhoncus habitant egestas diam. Lacus eros nunc faucibus quam tortor laoreet at natoque dapibus. Faucibus morbi interdum elit ultrices arcu. A tristique tempor ornare semper nulla at imperdiet arcu. Turpis etiam ultricies ut sollicitudin proin cras amet. Euismod adipiscing ut nibh fusce sed elementum. Pretium neque pharetra morbi vitae rhoncus in auctor. Pharetra mi sodales placerat vel orci donec scelerisque tincidunt. Lectus pellentesque donec pulvinar facilisis vulputate leo pharetra. Semper vitae fermentum aliquam curabitur suspendis...</p>
             </div>
           </div>
         </section>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Ui</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=ad84b8f2-2fef-4887-96fd-060449a093b0" type="text/javascript"></script>
     <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -16,9 +17,9 @@
       <div class="header__in">
         <div class="header__top_row"><a class="header__logo_w" href="#"><img class="header__logo" src="images/logo.png" alt="site logo"></a>
           <ul class="header__control">
-            <li class="header__control_item"><a class="header__control_phone" href="#">+7 (989) 261-39-83</a></li>
-            <li class="header__control_item">
-              <div class="header__control_location_dropdown">
+            <li class="header__control_item header__control_item--phone_mod"><a class="header__control_phone" href="#">+7 (989) 261-39-83</a></li>
+            <li class="header__control_item header__control_item--location_mod">
+              <div class="header__control_location_dropdown js-locatio-dropdown">
                 <button class="header__control_location btn_1" type="button"><span class="header__control_location_icon">
                     <svg class="icon icon_mark icon--size_mod">
                       <use xlink:href="images/sprite/sprite.svg#mark"></use>
@@ -26,6 +27,14 @@
                     <svg class="icon icon_arrow-down icon--size_mod">
                       <use xlink:href="images/sprite/sprite.svg#arrow-down"></use>
                     </svg></span></button>
+                <ul class="header__control_location_list">
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Москва</a></li>
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Санкт-Петербург</a></li>
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Ростов</a></li>
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Краснодар</a></li>
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Севастополь</a></li>
+                  <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Калининград</a></li>
+                </ul>
               </div>
             </li>
             <li class="header__control_item header__control_item--search_mod">
@@ -44,16 +53,17 @@
                 </div>
               </form>
             </li>
-            <li class="header__control_item"><a class="header__control_whatsapp btn_1" href="#"><span class="header__control_whatsapp_icon">
+            <li class="header__control_item header__control_item--whatsapp_mod"><a class="header__control_whatsapp btn_1" href="#"><span class="header__control_whatsapp_icon">
                   <svg class="icon icon_whatsapp icon--size_mod">
                     <use xlink:href="images/sprite/sprite.svg#whatsapp"></use>
                   </svg></span><span class="header__control_whatsapp_title">Написать в WhatsApp</span></a></li>
-            <li class="header__control_item"><a class="header__control_basket header__control_basket--active_state" href="#">
+            <li class="header__control_item header__control_item--basket_mod"><a class="header__control_basket header__control_basket--active_state" href="#">
                 <svg class="icon icon_basket icon--size_mod">
                   <use xlink:href="images/sprite/sprite.svg#basket"></use>
                 </svg><span class="header__control_basket_item"></span></a></li>
-            <li class="header__control_item"><a class="header__control_login" href="#">Войти</a></li>
+            <li class="header__control_item header__control_item--login_mod"><a class="header__control_login js-popup-login-trigger" href="#">Войти</a></li>
           </ul>
+          <button class="header__menu_trigger js-header-menu-trigger" type="button" aria-label="Toggle menu"><span></span></button>
         </div>
         <div class="header__bottom_row">
           <button class="header__catalog_trigger js-header-catalog-menu-trigger" type="button" aria-label="Toggle menu"><span class="header__catalog_icon">
@@ -69,6 +79,143 @@
             <li class="header__catalog_item"><a class="header__catalog_link" href="#">Статьи</a></li>
             <li class="header__catalog_item"><a class="header__catalog_link" href="#">Поиск по товарам</a></li>
             <li class="header__catalog_item"><a class="header__catalog_link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__catalog_row">
+        <div class="menu_catalog js-list-catalog">
+          <ul class="menu_catalog__list">
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Диагностические сканеры</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+              <div class="menu_catalog__sub">
+                <div class="menu_catalog__sub_w js-sublist-catalog">
+                  <div class="menu_catalog__sub_list_w menu_catalog__sub_list_w--column_mod">
+                    <ul class="menu_catalog__sub_list">
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">АВТОСКАНЕРЫ LAUNCH</a>
+                        <ul class="menu_catalog__sub_category_list">
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Готовые комплекты с планшетом</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Сканеры</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Система TMPS</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="menu_catalog__sub_list_w">
+                    <ul class="menu_catalog__sub_list">
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Переходники на нестандартные размеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Жесткие диски с софтом</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (грузовые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Диагностическое ПО и обновления</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (легковые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Марочные диагностические адаптеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Дилерские автосканеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мотор-тестеры, осциллографы</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Готовые диагностические комплекты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Оборудование для чип-тюнинга</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+              <div class="menu_catalog__sub">
+                <div class="menu_catalog__sub_w js-sublist-catalog">
+                  <div class="menu_catalog__sub_list_w menu_catalog__sub_list_w--column_mod">
+                    <ul class="menu_catalog__sub_list">
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">АВТОСКАНЕРЫ LAUNCH</a>
+                        <ul class="menu_catalog__sub_category_list">
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Готовые комплекты с планшетом</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Сканеры</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Система TMPS</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">АВТОСКАНЕРЫ LAUNCH</a>
+                        <ul class="menu_catalog__sub_category_list">
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Готовые комплекты с планшетом</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Сканеры</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Система TMPS</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">АВТОСКАНЕРЫ LAUNCH</a>
+                        <ul class="menu_catalog__sub_category_list">
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Готовые комплекты с планшетом</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Сканеры</a></li>
+                          <li class="menu_catalog__sub_category_item"><a class="menu_catalog__sub_category_link" href="#">Система TMPS</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">АВТОСКАНЕРЫ LAUNCH</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="menu_catalog__sub_list_w">
+                    <ul class="menu_catalog__sub_list">
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Переходники на нестандартные размеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Жесткие диски с софтом</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (грузовые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Диагностическое ПО и обновления</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (легковые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Марочные диагностические адаптеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Дилерские автосканеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мотор-тестеры, осциллографы</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Готовые диагностические комплекты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Все для автоключей</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+              <div class="menu_catalog__sub">
+                <div class="menu_catalog__sub_w js-sublist-catalog">
+                  <div class="menu_catalog__sub_list_w">
+                    <ul class="menu_catalog__sub_list">
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Переходники на нестандартные размеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Жесткие диски с софтом</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (грузовые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Диагностическое ПО и обновления</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мультимарочные автосканеры (легковые)</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Марочные диагностические адаптеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Дилерские автосканеры</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Мотор-тестеры, осциллографы</a></li>
+                      <li class="menu_catalog__sub_item"><a class="menu_catalog__sub_title" href="#">Готовые диагностические комплекты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Толщинометры</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Эндоскопы</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Оборудование для корректировки одометров</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+            </li>
+            <li class="menu_catalog__item js-list-trigger">
+              <button class="menu_catalog__item_btn" type="button"><span class="menu_catalog__item_title">Очистка форсунок</span><span class="menu_catalog__item_icon">
+                  <svg class="icon icon_arrow-right-shevron icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-right-shevron"></use>
+                  </svg></span></button>
+            </li>
           </ul>
         </div>
       </div>
@@ -303,6 +450,454 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="popup js-popup-login" data-popup-id="login">
+      <div class="popup__in">
+        <div class="popup__content">
+          <button class="popup_close js-popup-close" type="button" aria-label="Close Popup" tabindex="0"></button>
+          <div class="popup__content_in">
+            <h2 class="popup__content_title">Войти в свой аккаунт</h2>
+            <div class="popup__content_form_w">
+              <form action="" method="post">
+                <div class="popup__content_form">
+                  <div class="popup__content_form_input_list">
+                    <div class="popup__content_form_item">
+                      <div class="form_input">
+                        <div class="form_input__field">
+                          <input class="form_input__element" type="mail" id="login_mail" placeholder="Электронная почта">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popup__content_form_item">
+                      <div class="form_input">
+                        <div class="form_input__field">
+                          <input class="form_input__element" type="password" id="login_pas" placeholder="Пароль">
+                        </div>
+                      </div>
+                    </div>
+                  </div><a class="popup__content_link js-popup-pas-trigger" href="#">Восстановить пароль</a>
+                  <div class="popup__content_form_btn_w">
+                    <button class="btn_6 popup__content_form_btn" type="submit">Войти</button>
+                  </div>
+                  <div class="popup__content_form_btn_w"><a class="btn_5 popup__content_form_btn js-popup-reg-trigger" href="#">Зарегистрироваться</a></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup-pas" data-popup-id="pas">
+      <div class="popup__in">
+        <div class="popup__content">
+          <button class="popup_close js-popup-close" type="button" aria-label="Close Popup" tabindex="0"></button>
+          <div class="popup__content_in">
+            <h2 class="popup__content_title">Восстановление пароля</h2>
+            <div class="popup__content_descr">Пожалуйста, укажите e-mail, который вы использовали для регистрации на сайте. Мы отправим вам на него инструкции для восстановления доступа.</div>
+            <div class="popup__content_form_w">
+              <form action="" method="post">
+                <div class="popup__content_form">
+                  <div class="popup__content_form_input_list">
+                    <div class="popup__content_form_item">
+                      <div class="form_input">
+                        <div class="form_input__field">
+                          <input class="form_input__element" type="email" id="recovery_pas" placeholder="Электронная почта">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__content_form_btn_w popup__content_form_btn_w--center_mod">
+                    <button class="btn_6 popup__content_form_btn_recovery" type="submit">Восстановить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup-reg" data-popup-id="registration">
+      <div class="popup__in">
+        <div class="popup__content">
+          <button class="popup_close js-popup-close" type="button" aria-label="Close Popup" tabindex="0"></button>
+          <div class="popup__content_in">
+            <h2 class="popup__content_title">Регистрация</h2>
+            <div class="popup__content_form_w">
+              <form action="" method="post">
+                <div class="popup__content_form">
+                  <div class="popup__content_form_input_list">
+                    <div class="popup__content_form_item">
+                      <div class="form_input">
+                        <div class="form_input__field">
+                          <input class="form_input__element" type="mail" id="login_mail" placeholder="Электронная почта">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popup__content_form_item">
+                      <div class="form_input">
+                        <div class="form_input__field">
+                          <input class="form_input__element" type="password" id="login_pas" placeholder="Пароль">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__content_form_btn_w">
+                    <button class="btn_6 popup__content_form_btn" type="submit">Зарегистрироваться</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup--req_mod js-popup-req" data-popup-id="login">
+      <div class="popup__in">
+        <div class="popup__decor_w">
+          <div class="popup__decor"></div>
+        </div>
+        <div class="popup__content">
+          <button class="popup_close js-popup-close" type="button" aria-label="Close Popup" tabindex="0"></button>
+          <div class="popup__content_in">
+            <div class="popup__content_title">Lorem ipsum dolor sit amet consectetur</div>
+            <div class="popup__req_form_w">
+              <form action="get">
+                <div class="popup__req_form_in">
+                  <div class="popup__req_form_item">
+                    <div class="form_input">
+                      <div class="form_input__field">
+                        <input class="form_input__element" id="application_name" placeholder="Имя*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__req_form_item">
+                    <div class="form_input">
+                      <div class="form_input__field">
+                        <input class="form_input__element" type="tel" id="application_name" placeholder="Номер телефона*" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__req_form_item">
+                    <div class="popup__req_form_btn_w">
+                      <button class="btn_4 popup__req_btn" type="submit">Отправить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="popup__req_rights">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете Политику Конфиденциальности</div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="alert success">
+  <div class="alert_main">
+    <p>Ваше сообщение успешно отправлено!</p>
+    <div class="alert_icon"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+  </div>
+</div>
+<div class="alert failed">
+  <div class="alert_main">
+    <p>Проверьте правильность полей!</p>
+    <div class="alert_icon"><svg class="checkmark" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="alert__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
+  </div>
+</div>
+    <div class="mobile_menu">
+      <div class="mobile_menu__in">
+        <button class="header__menu_trigger header__menu_trigger--mobile_mod js-header-menu-trigger" type="button" aria-label="Toggle menu"><span></span></button>
+        <ul class="header__control">
+          <li class="header__control_item header__control_item--search_mod">
+            <form class="header__control_search_form">
+              <div class="header__control_search">
+                <div class="form_input header__search_w">
+                  <div class="form_input__field">
+                    <input class="form_input__element header__search" type="search" id="header-search" placeholder="Введите название товара...">
+                  </div>
+                </div>
+                <button class="header__search_btn" type="submit" aria-lebel="search button">
+                  <svg class="icon icon_search icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </li>
+          <li class="header__control_item header__control_item--phone_mod"><a class="header__control_phone" href="#">+7 (989) 261-39-83</a></li>
+          <li class="header__control_item header__control_item--location_mod">
+            <div class="header__control_location_dropdown js-locatio-dropdown">
+              <button class="header__control_location btn_1" type="button"><span class="header__control_location_icon">
+                  <svg class="icon icon_mark icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#mark"></use>
+                  </svg></span><span class="header__control_location_title">Москва</span><span class="header__control_location_arrow_icon">
+                  <svg class="icon icon_arrow-down icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#arrow-down"></use>
+                  </svg></span></button>
+              <ul class="header__control_location_list">
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Москва</a></li>
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Санкт-Петербург</a></li>
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Ростов</a></li>
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Краснодар</a></li>
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Севастополь</a></li>
+                <li class="header__control_location_item"><a class="header__control_location_item_link" href="#">Калининград</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__control_item header__control_item--whatsapp_mod"><a class="header__control_whatsapp btn_1" href="#"><span class="header__control_whatsapp_icon">
+                <svg class="icon icon_whatsapp icon--size_mod">
+                  <use xlink:href="images/sprite/sprite.svg#whatsapp"></use>
+                </svg></span><span class="header__control_whatsapp_title">Написать в WhatsApp</span></a></li>
+        </ul>
+        <div class="mobile_menu__catalog_list_w">
+          <ul class="mobile_menu__nav_list">
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Обучающие курсы</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Видеообзоры</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Видеоотзывы</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Гарантии</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Акции</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Статьи</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Поиск по товарам</a></li>
+            <li class="mobile_menu__nav_item"><a class="mobile_menu__nav_link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mobile_menu__catalog_list_w">
+              <ul class="mobile_menu__dropdown  ">
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Диагностические сканеры</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>АВТОСКАНЕРЫ LAUNCH</a>
+				<ul class='mobile_menu__catalog_list'>
+					<li class='mobile_menu__catalog_list_item'>
+						<a href="#" class='mobile_menu__catalog_list_item_link'>Готовые комплекты с планшетом</a>
+					</li>
+					<li class='mobile_menu__catalog_list_item'>
+						<a href="#" class='mobile_menu__catalog_list_item_link'>Сканеры</a>
+					</li>
+					<li class='mobile_menu__catalog_list_item'>
+						<a href="#" class='mobile_menu__catalog_list_item_link'>Система TMPS</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (грузовые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Диагностическое ПО и обновления'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (легковые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Марочные диагностические адаптеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Дилерские автосканеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мотор-тестеры, осциллографы</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Готовые диагностические комплекты</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Оборудование для чип-тюнинга</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (грузовые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Диагностическое ПО и обновления'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (легковые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Марочные диагностические адаптеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Дилерские автосканеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мотор-тестеры, осциллографы</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Готовые диагностические комплекты</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Все для автоключей</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (грузовые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Диагностическое ПО и обновления'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мультимарочные автосканеры (легковые)'</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Марочные диагностические адаптеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Дилерские автосканеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Мотор-тестеры, осциллографы</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Готовые диагностические комплекты</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Толщинометры</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Эндоскопы</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Оборудование для корректировки одометров</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+                <li class="mobile_menu__dropdown_item ">
+                  <div class="mobile_menu__dropdown_item_head">
+                    <div class="mobile_menu__dropdown_item_title">Очистка форсунок</div>
+                    <div class="mobile_menu__dropdown_item_icon_w">
+                      <svg class="icon icon_arrow-down-2 icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#arrow-down-2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile_menu__dropdown_item_body">
+                    <div class="mobile_menu__dropdown_item_body_in">
+		<ul class='mobile_menu__catalog_list'>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Переходники на нестандартные размеры</a>
+			</li>
+			<li class='mobile_menu__catalog_list_item'>
+				<a href="#" class='mobile_menu__catalog_list_item_link'>Жесткие диски с софтом</a>
+			</li>
+		</ul>
+		</div>
+                  </div>
+                </li>
+              </ul>
+        </div>
+      </div>
     </div>
   <script defer src="js/app.js"></script></body>
 </html>
