@@ -38,32 +38,29 @@
  * @author: Jack Doyle, jack@greensock.com
 */
 
-/*!
- * Sizzle CSS Selector Engine v2.2.1
- * http://sizzlejs.com/
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license
- * http://jquery.org/license
- *
- * Date: 2015-10-17
- */
+/*! ../../core/change-details.js */
 
-/*!
- * jQuery JavaScript Library v2.2.4
- * http://jquery.com/
- *
- * Includes Sizzle.js
- * http://sizzlejs.com/
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license
- * http://jquery.org/license
- *
- * Date: 2016-05-20T17:23Z
- */
+/*! ../../core/continuous-tail-details.js */
+
+/*! ../../core/holder.js */
+
+/*! ../../core/utils.js */
 
 /*! ../components/header */
+
+/*! ../core/action-details.js */
+
+/*! ../core/change-details.js */
+
+/*! ../core/continuous-tail-details.js */
+
+/*! ../core/holder.js */
+
+/*! ../core/utils.js */
+
+/*! ../factory.js */
+
+/*! ../masked/factory.js */
 
 /*! ../shared/classes-to-selector.mjs */
 
@@ -93,6 +90,8 @@
 
 /*! ./autoplay.mjs */
 
+/*! ./base.js */
+
 /*! ./build-swiper */
 
 /*! ./calcMobileRemValue */
@@ -106,6 +105,26 @@
 /*! ./constants */
 
 /*! ./controller.mjs */
+
+/*! ./controls/html-contenteditable-mask-element.js */
+
+/*! ./controls/html-input-mask-element.js */
+
+/*! ./controls/html-mask-element.js */
+
+/*! ./controls/input.js */
+
+/*! ./controls/mask-element.js */
+
+/*! ./core/action-details.js */
+
+/*! ./core/change-details.js */
+
+/*! ./core/continuous-tail-details.js */
+
+/*! ./core/holder.js */
+
+/*! ./core/utils.js */
 
 /*! ./debounce */
 
@@ -129,6 +148,8 @@
 
 /*! ./exist */
 
+/*! ./factory.js */
+
 /*! ./failed */
 
 /*! ./free-mode.mjs */
@@ -147,6 +168,14 @@
 
 /*! ./history.mjs */
 
+/*! ./holder.js */
+
+/*! ./html-contenteditable-mask-element.js */
+
+/*! ./html-input-mask-element.js */
+
+/*! ./html-mask-element.js */
+
 /*! ./isFunction */
 
 /*! ./isMobile */
@@ -158,6 +187,38 @@
 /*! ./keyboard.mjs */
 
 /*! ./manipulation.mjs */
+
+/*! ./mask-element.js */
+
+/*! ./masked/base.js */
+
+/*! ./masked/date.js */
+
+/*! ./masked/dynamic.js */
+
+/*! ./masked/enum.js */
+
+/*! ./masked/factory.js */
+
+/*! ./masked/function.js */
+
+/*! ./masked/number.js */
+
+/*! ./masked/pattern.js */
+
+/*! ./masked/pattern/chunk-tail-details.js */
+
+/*! ./masked/pattern/cursor.js */
+
+/*! ./masked/pattern/fixed-definition.js */
+
+/*! ./masked/pattern/input-definition.js */
+
+/*! ./masked/pipe.js */
+
+/*! ./masked/range.js */
+
+/*! ./masked/regexp.js */
 
 /*! ./mousewheel.mjs */
 
@@ -175,6 +236,20 @@
 
 /*! ./parallax.mjs */
 
+/*! ./pattern.js */
+
+/*! ./pattern/chunk-tail-details.js */
+
+/*! ./pattern/cursor.js */
+
+/*! ./pattern/fixed-definition.js */
+
+/*! ./pattern/input-definition.js */
+
+/*! ./range.js */
+
+/*! ./regexp.js */
+
 /*! ./scrollbar.mjs */
 
 /*! ./scss/main-global.scss */
@@ -189,6 +264,8 @@
 
 /*! ./utils */
 
+/*! ./utils.js */
+
 /*! ./utils.mjs */
 
 /*! ./virtual.mjs */
@@ -201,11 +278,15 @@
 
 /*! @orchidjs/unicode-variants | https://github.com/orchidjs/unicode-variants | Apache License (v2) */
 
+/*! ScssComponents/universal/tom-select.scss */
+
 /*! components/alert */
 
 /*! components/basket-remove */
 
 /*! components/clip-text */
+
+/*! components/form-mask */
 
 /*! components/init-popup */
 
@@ -233,9 +314,9 @@
 
 /*! gsap/ScrollTrigger */
 
-/*! ismobilejs */
+/*! imask */
 
-/*! jquery */
+/*! ismobilejs */
 
 /*! layout/layout */
 
@@ -252,8 +333,6 @@
 /*! swiper/modules */
 
 /*! tom-select */
-
-/*! tom-select/dist/css/tom-select.css */
 
 /*! utils */
 
@@ -396,12 +475,20 @@
   \****************************************/
 
 /*!****************************************!*\
+  !*** ./src/js/components/form-mask.js ***!
+  \****************************************/
+
+/*!****************************************!*\
   !*** ./src/js/utils/onWindowResize.js ***!
   \****************************************/
 
 /*!****************************************!*\
   !*** ./src/js/utils/onWindowScroll.js ***!
   \****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/imask/esm/index.js ***!
+  \*****************************************/
 
 /*!*****************************************!*\
   !*** ./src/js/components/init-popup.js ***!
@@ -425,10 +512,6 @@
 
 /*!********************************************!*\
   !*** ./node_modules/gsap/ScrollTrigger.js ***!
-  \********************************************/
-
-/*!********************************************!*\
-  !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
 
 /*!********************************************!*\
@@ -464,6 +547,10 @@
   \*********************************************/
 
 /*!**********************************************!*\
+  !*** ./node_modules/imask/esm/core/utils.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
   !*** ./node_modules/ismobilejs/esm/index.js ***!
   \**********************************************/
 
@@ -488,6 +575,26 @@
   \**********************************************/
 
 /*!***********************************************!*\
+  !*** ./node_modules/imask/esm/core/holder.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/base.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/date.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/enum.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/pipe.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
   !*** ./node_modules/swiper/modules/index.mjs ***!
   \***********************************************/
 
@@ -506,6 +613,10 @@
 /*!***********************************************!*\
   !*** ./src/js/components/promotion-slider.js ***!
   \***********************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/imask/esm/masked/range.js ***!
+  \************************************************/
 
 /*!************************************************!*\
   !*** ./node_modules/swiper/modules/thumbs.mjs ***!
@@ -560,6 +671,14 @@
   \************************************************/
 
 /*!*************************************************!*\
+  !*** ./node_modules/imask/esm/masked/number.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/imask/esm/masked/regexp.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
   !*** ./node_modules/ismobilejs/esm/isMobile.js ***!
   \*************************************************/
 
@@ -592,6 +711,22 @@
   \*************************************************/
 
 /*!**************************************************!*\
+  !*** ./node_modules/imask/esm/controls/input.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/imask/esm/masked/dynamic.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/imask/esm/masked/factory.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/imask/esm/masked/pattern.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
   !*** ./node_modules/swiper/modules/autoplay.mjs ***!
   \**************************************************/
 
@@ -614,6 +749,10 @@
 /*!**************************************************!*\
   !*** ./src/images/icons/sprite-icons/search.svg ***!
   \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/imask/esm/masked/function.js ***!
+  \***************************************************/
 
 /*!***************************************************!*\
   !*** ./node_modules/swiper/modules/free-mode.mjs ***!
@@ -740,11 +879,23 @@
   \******************************************************/
 
 /*!*******************************************************!*\
+  !*** ./node_modules/imask/esm/core/action-details.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/imask/esm/core/change-details.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
   !*** ./node_modules/swiper/shared/ssr-window.esm.mjs ***!
   \*******************************************************/
 
 /*!*******************************************************!*\
   !*** ./src/images/icons/sprite-icons/arrow-right.svg ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./src/scss/components/universal/tom-select.scss ***!
   \*******************************************************/
 
 /*!********************************************************!*\
@@ -756,15 +907,19 @@
   \********************************************************/
 
 /*!*********************************************************!*\
+  !*** ./node_modules/imask/esm/controls/mask-element.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/imask/esm/masked/pattern/cursor.js ***!
+  \*********************************************************/
+
+/*!*********************************************************!*\
   !*** ./node_modules/swiper/modules/effect-creative.mjs ***!
   \*********************************************************/
 
 /*!*********************************************************!*\
   !*** ./node_modules/swiper/modules/hash-navigation.mjs ***!
-  \*********************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/tom-select/dist/css/tom-select.css ***!
   \*********************************************************/
 
 /*!*********************************************************!*\
@@ -779,6 +934,10 @@
   !*** ./node_modules/swiper/shared/classes-to-selector.mjs ***!
   \************************************************************/
 
+/*!**************************************************************!*\
+  !*** ./node_modules/imask/esm/controls/html-mask-element.js ***!
+  \**************************************************************/
+
 /*!***************************************************************!*\
   !*** ./node_modules/@fancyapps/ui/dist/fancybox/fancybox.css ***!
   \***************************************************************/
@@ -788,8 +947,28 @@
   \***************************************************************/
 
 /*!****************************************************************!*\
+  !*** ./node_modules/imask/esm/core/continuous-tail-details.js ***!
+  \****************************************************************/
+
+/*!****************************************************************!*\
   !*** ./node_modules/tom-select/dist/js/tom-select.complete.js ***!
   \****************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/imask/esm/masked/pattern/fixed-definition.js ***!
+  \*******************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/imask/esm/masked/pattern/input-definition.js ***!
+  \*******************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/imask/esm/controls/html-input-mask-element.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/imask/esm/masked/pattern/chunk-tail-details.js ***!
+  \*********************************************************************/
 
 /*!**********************************************************************!*\
   !*** ./node_modules/swiper/shared/create-element-if-not-defined.mjs ***!
@@ -798,3 +977,7 @@
 /*!**********************************************************************!*\
   !*** ./node_modules/swiper/shared/effect-virtual-transition-end.mjs ***!
   \**********************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ./node_modules/imask/esm/controls/html-contenteditable-mask-element.js ***!
+  \******************************************************************************/
